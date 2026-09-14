@@ -1,0 +1,28 @@
+# Quartus build junk
+db/
+incremental_db/
+simulation/
+greybox_tmp/
+*.qws
+*.bak
+*.rpt
+*.summary
+*.smsg
+*.done
+*.jdi
+*.pin
+*.sof
+*.pof
+*.jic
+*.map
+*.fit
+*.sta
+*.asm
+*.flow
+*.eda
+output_files/
+*.cdf
+
+# Editor
+*.swp
+*~
