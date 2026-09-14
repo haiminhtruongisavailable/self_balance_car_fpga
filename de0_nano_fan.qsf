@@ -1,0 +1,37 @@
+# Practice fan top — pin locations only
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE22F17C6
+set_global_assignment -name TOP_LEVEL_ENTITY top_l298n_fan
+set_global_assignment -name VERILOG_FILE top_l298n_fan.v
+set_global_assignment -name VERILOG_FILE pwm1.v
+set_global_assignment -name VERILOG_FILE uart_rx.v
+set_global_assignment -name VERILOG_FILE uart_tx.v
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_global_assignment -name ENABLE_SIGNALTAP OFF
+
+set_location_assignment PIN_R8  -to CLOCK_50
+set_location_assignment PIN_J15 -to KEY[0]
+set_location_assignment PIN_E1  -to KEY[1]
+set_location_assignment PIN_A15 -to LED[0]
+set_location_assignment PIN_A13 -to LED[1]
+set_location_assignment PIN_B13 -to LED[2]
+set_location_assignment PIN_A11 -to LED[3]
+set_location_assignment PIN_D1  -to LED[4]
+set_location_assignment PIN_F3  -to LED[5]
+set_location_assignment PIN_B1  -to LED[6]
+set_location_assignment PIN_L3  -to LED[7]
+
+set_location_assignment PIN_A14 -to GPIO_2[0]
+set_location_assignment PIN_B16 -to GPIO_2[1]
+set_location_assignment PIN_C14 -to GPIO_2[2]
+set_location_assignment PIN_C16 -to GPIO_2[3]
+set_location_assignment PIN_C15 -to GPIO_2[4]
+set_location_assignment PIN_D16 -to GPIO_2[5]
+set_location_assignment PIN_D15 -to GPIO_2[6]
+set_location_assignment PIN_D14 -to GPIO_2[7]
+set_location_assignment PIN_F15 -to GPIO_2[8]
+set_location_assignment PIN_F16 -to GPIO_2[9]
+set_location_assignment PIN_F14 -to GPIO_2[10]
+set_location_assignment PIN_G16 -to GPIO_2[11]
+set_location_assignment PIN_G15 -to GPIO_2[12]
+set_location_assignment PIN_E15 -to GPIO_2_IN0
